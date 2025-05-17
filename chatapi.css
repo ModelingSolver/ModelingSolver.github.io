@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#messages {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    height: 300px;
+    overflow-y: auto;
+}
+
+#input-message {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+}
