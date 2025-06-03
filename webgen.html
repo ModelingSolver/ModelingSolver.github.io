@@ -1,26 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Web Page Code Generator</title>
-  <link rel="stylesheet" href="webgen.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page web avec vidéo YouTube en arrière-plan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+    #player {
+      width: 100vw ;
+      height: 100vh ;
+      object-fit: cover;
+    }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      flex-direction: column;
+      gap: 20px;
+    }
+   .btn-bleu {
+  background-color: transparent; /* bouton transparent */
+  color: #FFFFFF; /* couleur du texte */
+  border: 2px solid #FFFFFF; /* bordure blanche, facultatif */
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-bleu:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* léger fond transparent au hover */
+  border-color: #FFFFFF; /* peut rester blanc ou changer */
+}
+  </style>
 </head>
 <body>
-  <h1>Web Page Code Generator</h1>
-  <button id="generate-btn">Generate a web page</button>
-  <div class="encart-pub"* style="text-align: center; margin-top: 10px;">
-
-
-  <div style="width: 300px; height: 250px; border: 1px solid #ccc; display: inline-block;">
-
-
-    Encart pub
-
-
-  </div>
-
-
-</div>
-
   <script src="script.js"></script>
+  <div id="video-background">
+    <div id="player"></div>
+  </div>
+  <script>
+    let player;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        videoId: 'pec41Phx5I8',
+        playerVars: {
+          'autoplay': 1,
+          'controls': 0,
+          'showinfo': 0,
+          'modestbranding': 1,
+          'loop': 1,
+          'playlist': 'pec41Phx5I8'
+        },
+        events: {
+          'onReady': function(event) {
+            event.target.mute();
+            event.target.playVideo();
+          }
+        }
+      });
+    }
+  </script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+<main>
+    <section class="hero">
+       <h1 style="color:#FFFFFF" align="center">WPC-GENERATOR.V3</h1>
+       <p style="color:#FFFFFF" align="center">PIF PAF PLOF PLOUF...</p>
+    </section>
+    <div class="center-container">
+      <button id="generate-btn" class="btn-bleu" style="width:400px; height:100px;">GENERATE A WEBPAGE</button>
+       <script src="index.js"></script>
+    </div>
+    <section class="contact">
+      <h2>Contact</h2>
+      <a href="https://github.com/ModelingSolver">Page web.io</a>
+    </section>
+</main>
 </body>
-</html>
+</htm
