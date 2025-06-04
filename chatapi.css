@@ -1,44 +1,326 @@
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
+body {
+
+
+
+
+    font-family: Arial, sans-serif;
+
+
+  background-image: url('https://s1.qwant.com/thumbr/474x266/1/3/1b7d69b75bb005435a4293b8c08bc21e50ee859a8cef2ebf95c345f40c45a9/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.420Ih5dwDuJmCdCKw5DfrAHaEK%26r%3D0%26pid%3DApi&q=0&b=1&p=0&a=0');
+
+
+  font-family: Arial, sans-serif;
+
+
+  margin: 0;
+
+
+  padding: 0;
+
+
+  background-size: cover;
+
 }
+
+
+
+
+#messages {
+
+
+    padding: 10px;
+
+
+    border: 1px solid #ccc;
+
+
+    border-radius: 5px;
+
+
+    width: 50%;
+
+
+    height: 300px;
+
+
+    overflow-y: auto;
+
+
+header {
+
+
+  background-color: #333;
+
+
+  color: #fff;
+
+
+  padding: 1em;
+
+
+  text-align: center;
+
+}
+
+
+
+
+#input-message {
+
+
+    width: 40%;
+
+
+    padding: 10px;
+
+
+    font-size: 16px;
+
+
+}
+
 
 header nav ul {
+
+
   list-style: none;
+
+
   margin: 0;
+
+
   padding: 0;
+
+
   display: flex;
+
+
   justify-content: space-between;
+
+
 }
+
+
+
+
 
 header nav ul li {
+
+
   margin-right: 20px;
+
+
 }
+
+
+
+
 
 header nav a {
+
+
   color: yellow;
+
+
   text-decoration: none;
-}
-
-
-
-body {
-    background-color: yellow;
-
-}
-
-h1  {
-    font-size: 40px;
-    text-align: center;
-
 
 
 }
 
-.isdoeswarning  {
-    flex-box: flex;
-    text-align: center;
+
+
+
+
+
+
+
+h1 {
+
+
+  text-align: center;
+
+
+  font-size: 100px;
+
+
+  margin-bottom: 0px
+
+
+ }
+
+
+
+
+
+p {
+
+
+  text-align: center;
+
+
+  font-size: 50px;
+
+
+  margin-bottom: 0px;
+
+
+  margin-top: 0px
+
+
+}
+
+
+
+
+
+.center-container {
+
+
+  background-size: cover;
+
+
+  background-position: center;
+
+
+  height: 100vh;
+
+
+  display: flex;
+
+
+  justify-content: center;
+
+
+  align-items: center;
+
+
+  color: #000000;
+
+
+  margin-bottom: none;
+
+
+
+
+
+}
+
+
+
+
+
+.center-container button {
+
+
+   width: 40vw ;
+
+
+   height: 40vh ;
+
+
+}
+
+
+
+
+
+#synchro {
+
+
+  margin-right: 20px;
+
+
+  background-color: #333;
+
+
+  color: yellow;
+
+
+  border: none;
+
+
+  padding: 10px 20px;
+
+
+  font-size: 30px;
+
+
+  cursor: pointer;
+
+
+  border-radius: 5px;
+
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+
+  transition: all 0.3s ease-in-out;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+#recover {
+
+
+  background-color: #333;
+
+
+  color: yellow;
+
+
+  border: none;
+
+
+  padding: 10px 20px;
+
+
+  font-size: 30px;
+
+
+  cursor: pointer;
+
+
+  border-radius: 5px;
+
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);Add commentMore actions
+
+
+  transition: all 0.3s ease-in-out;
+
+
+}
+
+
+
+
+
+#synchro:active, #recover:active
+
+
+{
+
+
+  transform: scale(0.9) ;
+
+
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0, 5) ;
+
 
 }
