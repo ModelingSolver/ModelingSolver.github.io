@@ -163,3 +163,4 @@ newWindow.document.write(`
   </body>
   </html>
 `);
+}
