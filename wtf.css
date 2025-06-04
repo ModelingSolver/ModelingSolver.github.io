@@ -1,0 +1,43 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: yellow;
+  text-decoration: none;
+}
+
+
+
+body {
+    background-color: yellow;
+
+}
+
+h1  {
+    font-size: 40px;
+    text-align: center;
+
+
+
+}
+
+.isdoeswarning  {
+    flex-box: flex;
+    text-align: center;
+
