@@ -37,6 +37,14 @@ h1  {
 
 }
 
+p    {
+
+  margin-bottom: 0px;
+  margin-right: 40px ;
+  margin-left: 40px ;
+}
+
+
 .isdoeswarning  {
     flex-box: flex;
     text-align: center;
