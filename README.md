@@ -7,6 +7,6 @@ avec:
  -Generateur de pages web sous forme de code html et css
 page html css , generateur JS
 
- -Proto Front end PEZ ( is less pwd less protocol )
+ -Proto Front end PEZ ( id less pwd less protocol )
  
 https://modelingsolver.github.io/
